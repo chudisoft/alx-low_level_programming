@@ -1,2 +1,1 @@
-#!/bin/bash
-Write a script that runs a C file through the preprocessor and save the result into another file.
+Alx _low level_ __programming with C__

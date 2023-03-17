@@ -3,7 +3,11 @@
 #include <stdio.h>
 /* more headers goes there */
 
-/* Print positive, negative and zero numbers form a random number */
+/**
+ * main - entry point.
+ * Description: Print positive, negative and zero numbers form a random number
+ * Return: 0
+ */
 int main(void)
 {
 	int n;

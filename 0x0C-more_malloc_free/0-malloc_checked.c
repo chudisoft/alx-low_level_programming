@@ -7,7 +7,7 @@
  *Return: Returns a pointer to the allocated memory
  *status value is equal to 98 if malloc fails
  */
-void *malloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b)
 {
 	char *p;
 

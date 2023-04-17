@@ -3,7 +3,7 @@
 
 /**
  * struct dog - has a dog structure object
- * @name: dog  name 
+ * @name: dog  name
  * @age: dog age
  * @owner: dog owner
  */

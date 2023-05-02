@@ -20,7 +20,7 @@ size_t free_listint_safe(listint_t **h)
 		next_data = *h - (*h)->next;
 		if (next_data > 0)
 		{
-			tmp = (*h)->next;
+			tmp_list = (*h)->next;
 			free(*h);
 			*h = tmp_list;
 			count++;

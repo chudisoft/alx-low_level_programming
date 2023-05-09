@@ -1,4 +1,6 @@
 #include "elf_h.h"
+#include "_prints1.c"
+#include "_prints2.c"
 
 
 /**

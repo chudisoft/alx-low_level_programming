@@ -20,7 +20,7 @@ int append_text_to_file(const char *filename, char *text_content)
 
 	if (text_content)
 	{
-		while (text_content[s])
+		while (text_content[_str])
 			_str++;
 		_wrt = write(_fd, text_content, _str);
 		if (_wrt != _str)

@@ -7,9 +7,11 @@
 void print_binary(unsigned long int n)
 {
 	unsigned long int numBits = sizeof(unsigned long int) * 8;
+	unsigned long int i;
     
-	for (unsigned long int i = numBits - 1; i >= 0; i--) {
-			unsigned long int bit = (n >> i) & 1;
-			_putchar('0' + bit);
+	for (i = numBits - 1; i >= 0; i--)
+	{
+		unsigned long int bit = (n >> i) & 1;
+		_putchar('0' + bit);
 	}
 }

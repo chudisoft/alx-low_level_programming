@@ -6,14 +6,24 @@
  */
 void print_binary(unsigned long int n)
 {
-	unsigned long int numBits = sizeof(unsigned long int) * 8;
-	unsigned long int i;
-    
-	for (i = numBits - 1; i >= 0; i--)
+	/* check if n is 0, in which case it has a single binary digit '0' */
+	if (n == 0)
 	{
-		unsigned long int bit;
-		
-		bit = (n >> i) & 1;
-		_putchar('0' + bit);
+		_putchar('0'); /* print '0' and return */
+		return;
+	}
+
+	/* recursively print the binary representation */
+	if (n >> 0) /* if n is not 0 */
+	{
+		if (n >> 1)
+			/* recursively shift and print the remaining bits */
+			print_binary(n >> 1);
+		/* print the least significant bit as '0' or '1' */
+		_putchar((n & 1) + '0');
+	}
+	else
+	{
+		_putchar('0'); /* print '0' if n is zero */
 	}
 }
